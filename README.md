@@ -68,6 +68,50 @@ Create `conda` environment:
 ```bash
 conda env create -f environment.yaml
 conda activate ditto
+
+# 如果pip安装失败，执行手动pip安装以下包
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --default-timeout=1000 -r <(cat <<EOF
+audioread==3.0.1
+cffi==1.17.1
+cuda-python==12.6.2.post1
+cython==3.0.11
+decorator==5.1.1
+filetype==1.2.0
+imageio==2.36.1
+imageio-ffmpeg==0.5.1
+joblib==1.4.2
+lazy-loader==0.4
+librosa==0.10.2.post1
+llvmlite==0.43.0
+msgpack==1.1.0
+numba==0.60.0
+nvidia-cublas-cu12==12.6.4.1
+nvidia-cuda-runtime-cu12==12.6.77
+nvidia-cudnn-cu12==9.6.0.74
+opencv-python-headless==4.10.0.84
+packaging==24.2
+platformdirs==4.3.6
+pooch==1.8.2
+pycparser==2.22
+scikit-image==0.25.0
+scikit-learn==1.6.0
+scipy==1.15.0
+soundfile==0.13.0
+soxr==0.5.0.post1
+threadpoolctl==3.5.0
+tifffile==2024.12.12
+tqdm==4.67.1
+polygraphy
+colored
+onnxruntime
+onnxruntime-gpu
+mediapipe
+einops
+EOF
+)
+
+# TensorRT 需要从 NVIDIA PyPI 安装，环境创建后手动安装
+pip install --extra-index-url https://pypi.nvidia.com tensorrt==8.6.1 tensorrt-bindings==8.6.1 tensorrt-libs==8.6.1
 ```
 
 ### Pip
