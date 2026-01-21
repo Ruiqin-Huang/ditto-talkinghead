@@ -1,4 +1,4 @@
-name: ditto
+name: ditto-hrq
 channels:
   - pytorch
   - nvidia
