@@ -59,7 +59,7 @@ Tested Environment
 
 Clone the codes from [GitHub](https://github.com/antgroup/ditto-talkinghead):  
 ```bash
-git clone https://github.com/antgroup/ditto-talkinghead
+git clone https://github.com/Ruiqin-Huang/ditto-talkinghead
 cd ditto-talkinghead
 ```
 
