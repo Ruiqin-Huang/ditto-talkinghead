@@ -67,7 +67,7 @@ cd ditto-talkinghead
 Create `conda` environment:
 ```bash
 conda env create -f environment.yaml
-conda activate ditto-hrq
+conda activate ditto
 
 # 如果pip安装失败，执行手动pip安装以下包
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --default-timeout=1000 -r <(cat <<EOF
