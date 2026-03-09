@@ -114,29 +114,6 @@ EOF
 pip install --extra-index-url https://pypi.nvidia.com tensorrt==8.6.1 tensorrt-bindings==8.6.1 tensorrt-libs==8.6.1
 ```
 
-### Pip
-If you have problems creating a conda environment, you can also refer to our [Colab](https://colab.research.google.com/drive/19SUi1TiO32IS-Crmsu9wrkNspWE8tFbs?usp=sharing). 
-After correctly installing `pytorch`, `cuda` and `cudnn`, you only need to install a few packages using pip:
-```bash
-pip install \
-    tensorrt==8.6.1 \
-    librosa \
-    tqdm \
-    filetype \
-    imageio \
-    opencv_python_headless \
-    scikit-image \
-    cython \
-    cuda-python \
-    imageio-ffmpeg \
-    colored \
-    polygraphy \
-    numpy==2.0.1
-```
-
-If you don't use `conda`, you may also need to install `ffmpeg` according to the [official website](https://www.ffmpeg.org/download.html).
-
-
 ## 📥 Download Checkpoints
 
 Download checkpoints from [HuggingFace](https://huggingface.co/digital-avatar/ditto-talkinghead) and put them in `checkpoints` dir:
